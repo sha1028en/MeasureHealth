@@ -1,11 +1,10 @@
 # MeasureHealth / 신장심박측정기 및 신체검사 측정 앱
-2019 Q4 College Final Team Project. Measure ur health and Predict Military svc Grade.
-
-한국폴리텍1대학 서울정수 캠퍼스. 2019년 최종 졸업과제 팀 프로젝트.
+2019 Q4 College Final Team Project. Measure ur health and Predict Military svc Grade.<br>
+한국폴리텍1대학 서울정수캠퍼스. 2019년 최종 졸업과제 팀 프로젝트( 박동수, 정진영, 이일성, 민병우, 김태원).<br><br>
 ![2-1 grade](https://user-images.githubusercontent.com/100817401/173728511-6ba388a9-3dc8-4df5-b139-528a6ca66596.jpg)
 ![2-2 grade](https://user-images.githubusercontent.com/100817401/173728516-9291ee76-e912-4efc-93e7-dae9a93fd578.jpg)
 
-
+<hr>
 
 20대 남자면 모두 받아야 하는 군 신체검사는 정해진 기간에만 받을 수 있으며, 특수한 병이나 증상이 있으면, <br>
 최종결과가 나오는 기간이 길어져 등급판정이 늦게 나올 수 있어, 검사 과정이 불친절하다. <br>
@@ -20,7 +19,6 @@
 ### 대략적인 구상! [ 프로젝트 기획 ]
 
 ![프로젝트 블록도](https://user-images.githubusercontent.com/100817401/173725242-fe50084c-b2be-4c3f-b06b-254b1a04ecea.png)
-
 ![강의계획서그림](https://user-images.githubusercontent.com/100817401/173725251-6bf0bd91-cd4f-477e-981e-65a3efb23fe7.png)
 
 
@@ -101,13 +99,4 @@
       - 블루투스 통신의 결과값을 담을 데이터 클래스.
       - MAC주소, 디바이스 이름, 통신 메세지, 통신 데이터를 담는다.
 
-
-  
-
-
-
-
-
-
-
-
+  <hr>
