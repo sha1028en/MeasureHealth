@@ -1,6 +1,12 @@
 # MeasureHealth / 신장심박측정기 및 신체검사 측정 앱
 2019 Q4 College Final Team Project. Measure ur health and Predict Military svc Grade.
 
+한국폴리텍1대학 서울정수 캠퍼스. 2019년 최종 졸업과제 팀 프로젝트.
+![2-1 grade](https://user-images.githubusercontent.com/100817401/173728511-6ba388a9-3dc8-4df5-b139-528a6ca66596.jpg)
+![2-2 grade](https://user-images.githubusercontent.com/100817401/173728516-9291ee76-e912-4efc-93e7-dae9a93fd578.jpg)
+
+
+
 20대 남자면 모두 받아야 하는 군 신체검사는 정해진 기간에만 받을 수 있으며, 특수한 병이나 증상이 있으면, <br>
 최종결과가 나오는 기간이 길어져 등급판정이 늦게 나올 수 있어, 검사 과정이 불친절하다. <br>
 이런 신체검사 등급을 간단하고 빠르게 측정하여, 신체등급을 미리 예상 할 수 있는 신체검사 측정기와 연동하여 <br>
@@ -9,6 +15,7 @@
 또한, 이 어플리케이션은 아두이노Uno와 블루투스 무선 직렬통신을 통하여 값을 받아온다.
 ![CmDataReceived](https://user-images.githubusercontent.com/100817401/173727863-4e6ef560-ae25-4dca-8501-70a7d8683af9.jpg)
 
+<hr>
 
 ### 대략적인 구상! [ 프로젝트 기획 ]
 
