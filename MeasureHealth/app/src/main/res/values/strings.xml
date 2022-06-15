@@ -1,0 +1,140 @@
+<resources>
+    <string name="app_name">신체검사 측정 앱</string>
+
+
+    <string name="info_right">우측</string>
+    <string name="info_left">좌측</string>
+    <string name="infor_rank_measure_exit">예상 종료</string>
+    <string name="infor_rank_measure">등급 측정</string>
+    <string name="infor_relevant_infor">관련 정보</string>
+    <string name="infor_exit_app">앱 실행 종료</string>
+    <string name="infor_caution_agree">확인</string>
+    <string name="infor_show_result">결과 확인</string>
+    <string name="infor_input_here">입력...</string>
+    <string name="infor_next">다음</string>
+    <string name="infor_hospital">지정 병원 목록</string>
+    <string name="infor_rank_standard">등급 판정 기준</string>
+    <string name="infor_etc_exemption">기타 결격 사유</string>
+    <string name="infor_result_rank_measure_info0">당신의 예상 등급은...</string>
+    <string name="infor_result_rank_measure_info1">입니다.</string>
+
+    <string name="title_mainmenu"> 신체검사 측정 앱 </string>
+    <string name="title_detail_rank_measure"> 상세 정보 입력 </string>
+    <string name="title_infor_caution_dialog"> 주의 사항 </string>
+    <string name="title_rank_measure"> 신체검사 측정 </string>
+    <string name="title_infor_select_mac_address"> 페어링 대상 선택 </string>
+    <string name="tltle_select_information"> 관련 정보 선택 </string>
+
+
+
+    <string name="default_none">None</string>
+
+
+    <string name="unit_high">신장</string>
+    <string name="unit_heartbeat">심박</string>
+    <string name="unit_va">시력</string>
+    <string name="unit_weight"> 체중</string>
+
+    <string name="unit_KG">KG</string>
+    <string name="unit_HR">HR</string>
+    <string name="unit_CM">CM</string>
+    <string name="unit_BMI">BMI</string>
+
+    <string name="grade_active_duty">현역</string>
+    <string name="grade_social_service_agent">사회복무요원</string>
+    <string name="grade_exemption">면제</string>
+
+    <string name="grade_1st">1급</string>
+    <string name="grade_2nd">2급</string>
+    <string name="grade_3rd">3급</string>
+    <string name="grade_4th">4급</string>
+    <string name="grade_5th">5급</string>
+    <string name="grade_6th">6급</string>
+    <string name="grade_7th">7급</string>
+
+    <string name="infor_measure_caution">
+        심박 측정 시, 손으로 심박 센서를
+        완전히 가리지 마세요.
+    </string>
+
+    <string name="introduce_BMI">
+        BMI와 관련된 판정 기준
+    </string>
+
+    <string name="introduce_va">
+        시력과 관련된 판정 기준
+    </string>
+
+
+    <string name="introduce_etc_exemption">
+        등급 판정과 관련된 예외 사항
+    </string>
+
+    <string name="info_not_final_ver">
+        아직 최종 버전이 아님.
+        블루투스 기능은 현재.
+        꺼 둔 상태임.
+        HW 완성해줘 그래야
+        내가 블루투스 테스트하지.
+    </string>
+
+    <string name="introduce_hatintime_game">
+        A Hat in Time is a cute-as-heck 3D platformer
+        featuring a little girl who stitches hats for wicked powers.
+    </string>
+
+    <string name="info_measure_va">
+        ---시력(약시)와 관련된 기준---\n\n
+        약시와 관련된 자료는 만16세 이전의 자료만을 사용한다.\n\n
+
+        한쪽 눈의 시력이 0.6 이하이면 4급.\n
+        한쪽 눈의 시력이 0.1 이하 이거나\n
+        좋은 눈의 시력이 0.2 이하이면 5급 판정이다.\n
+    </string>
+
+    <string name="info_measure_bmi">
+        ---신장과 체중에 관한 기준---\n
+
+        신장이 140 이하인 경우에는 \n체중과 상관없이 6급.\n
+        신장이 141 ~ 145Cm 이면 \n체중과 상관없이 5급.\n
+        신장이 146 ~ 158Cm 이면 \n체중과 상관없이 4급이다.\n\n
+
+        신장이 159 ~ 160Cm 일때 \nBMI 수치가 17 ~ 32.9면 3급.\n
+        신장이 159 ~ 160Cm 일때 \nBMI 수치가 17미만, 33이상이면 4급이다.\n\n
+
+        신장이 161 ~ 203Cm 일때 \nBMI 수치가 20 ~ 24.9이면 1급.\n\n
+
+        신장이 161 ~ 203Cm 일때 \nBMI 수치가 18.5 ~ 19.9\n
+        신장이 161 ~ 203Cm 일때 \nBMI 수치가 25 ~ 29.9이면 2급이며,\n\n
+
+        신장이 161 ~ 203Cm 일때 \nBMI 수치가 17 ~ 18.4.\n
+        신장이 161 ~ 203Cm 일때 \nBMI 수치가 30 ~ 32.9이면 3급이다.\n\n
+
+        신장이 161 ~ 203Cm 일때 \nBMI 수치가 17미만, 33이상이면 4급이며\n\n
+
+        신장이 204Cm 이상이면, \n체중과 관계없이 4급이다.
+    </string>
+
+    <string name="introduce_measure_bpm">
+        ---심박수에 관한 판정 기준---
+    </string>
+
+
+    <string name="info_etc_exemption">
+        ---기타 결격 사유---\n\n
+        정신적 장애와 관련된 판정:\n
+        중증 기질성 정신장애, 물질관련 장애, 조현병,\n
+        양극성 장애(경도), 우울 및 기분장애, 신경증적 장애 등\n
+        6개월 이상의 정신건강의학과 치료 경력이 있어\n
+        진단을 내리기 충분한 경우 사회복무요원 또는 면제를 받을 수 있다.\n\n
+
+        종양과 관련된 판정:\n
+        재발성이 큰 양성종양, 악성종양의 소견이 있으면\n
+        사회복무요원 또는 면제를 받을 수 있다.\n
+        다만, 심장과 관련된 종양은 면제다.\n\n
+
+        척추층만증과 관현된 판정:\n
+        20°이상의 골 변형이 진행되면 사회복무요원.\n
+        40°초과의 골 변형시 면제를 받는다.\n\n
+    </string>
+</resources>

@@ -1,0 +1,65 @@
+
+
+
+    한국폴리텍1대학 서울정수 캠퍼스 모바일정보통신.
+    2조 신체검사 측정기/측정앱 박동수(prst2486)작성.
+    2019/04/16 ~ 2019/10/16
+
+
+    HW(아두이노)에서 보내온 값을 블루투스로 수신하여.
+    값을 보관하고 다른 값들을 입력받아 신검등급을 예상하는 어플리케이션.
+
+    또는 신검에 관련된 판정 기준을 안내하거나 서울의 병무청 지정 병원을 안내.
+
+    ---블루투스---
+    블루투스 부분은 GitHub의 BluetoothSPP 오픈소스 라이브러리를 사용하여 구현.
+    이를 다시 BluetoothSerialConnectionHelper으로 목적에 알맞게 재구성하고.
+    BluetoothSerialAsyncConnectionHelper에게 상속하여.
+    BluetoothSerialAsyncConnectionHelper 클래스를 사용하여 블루투스 통신을 구현하였다.
+
+    기능으로는
+        1. 페어링된 디비이스를 JSON 형식으로 리턴.
+        2. MAC 주소를 이용해 수동으로 연결.
+        3. 페어링된 디바이스중 자동으로 연결.
+        4. 데이터 실시간 수신 & 이벤트 처리
+        5. 블루투스 권한 요청.
+        6. 디바이스의 블루투스 기능 유무/활성화 확인.
+
+
+
+     ---액티비티---
+        SplashActivity   : 앱 실행시 최초로 보여주는 화면. MainMenuActivity 로 분기.
+        MainMenuActivity : "등급 측정", "관련 정보", "앱 실행 종료"를 선택 가능.
+            등급 측정     : InforCautionDialog를 표시.
+            관련 정보     : SelectInfoActivity로 분기.
+            앱 실행 종료  : 어플리케이션 종료.
+
+
+        액티비티 : 등급 측정 선택시...
+            InforCautionDialog        : 측정하기 전에 안내를 표시하는 다이얼로그. RankMeasureActivity로 분기,
+            RankMeasureActivity       : 블루투스 모듈을 사용하여 신장, 심박 값을 수신받아 다음 액티비티에 값을 전달. DetailRankMeasureActivity로 분기.
+            DeviceListInfoDialog      : 통신 전에 통신 대상을 선택하는 다이얼로그.ListView로 페어링된 디바이스 목록을 표시.
+            DetailRankMeasureActivity : 좌,우 시력과 체중을 EditText 뷰로 입력받아 다음 액티비티에 값 전달. ResultMeasureActivity로 분기.
+            DebugValueDialog          : DetailRankMeasureActivity에서 표시. 신장과 심박을 직접 수동으로 입력 가능...기능 테스트 목적.
+            ResultMeasureActivity     : 전달받은 값들을 토대로 등급을 예측하여 표시하는 액티비티. MainMenuActivity로 분기.
+
+
+        액티비티 : 관련 정보 선택시...
+            SelectInfoActivity : "지정 병원 목록", "등급 판정 기준", "기타 결격 사유"를 선택 가능.
+                지정 병원 목록  : 서울에 있는 병무청 지정병원 목록을 CustomListView로 표시한다. ShowInfoListActivit로 분기.
+                등급 판정 기준  : BMI, 시력과 관련된 판정 기준을 CustomListView로 표시한다.  ShowInfoListActivit로 분기.
+                기타 결격 사유  : 특수한 판정 기준을 안내한다. ShowInfoActivity로 분기.
+
+                액티비티 : 등급 판정 기준 선택시...
+                    BMI : BMI 수치과 관련된 판정 기준을 안내. ShowInfoActivity로 분기.
+                    시력 : 시력과 관련된 판정 기준을 안내. ShowInfoActivity로 분기.
+
+
+        그외...
+            BluetoothResultDict : 블루투스 수신값을 담기 위한 전용 객체.
+            HealthInfoDict      : 신체 측정 값을 담기 위한 전용 객체.
+            KeyTagList          : 키, 태그, 프로토콜 등을 미리 정의한 객체.
+            UsefulUtill         : 자주 사용하는 기능을 편하게 쓰기 위한 객체... 로크캣, 토스트
+
+            HospitalSeoul   : 서울 병무청 지정 병원 이름과, 전화번호를 보관하는 객체.
+            ShowInfoArchive : "지정 병원 목록" 항목을 위해 있는 객체. HospitalSeoul의 아이템을 반환.
