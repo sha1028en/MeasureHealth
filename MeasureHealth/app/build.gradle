@@ -8,6 +8,7 @@ android {
             storePassword 'THIS IS MY PASSWD...'
             keyPassword 'THIS IS MY PASSWD...'
         }
+      
     }
     compileSdkVersion 28
     defaultConfig {
