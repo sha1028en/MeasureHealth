@@ -3,10 +3,10 @@ apply plugin: 'com.android.application'
 android {
     signingConfigs {
         relese {
-            storeFile file('E:\\Key\\prst2486.bks')
+            storeFile file('THIS IS MY PATH...')
             keyAlias = 'prst2486'
-            storePassword '10Hat28KiD'
-            keyPassword '10Hat28KiD'
+            storePassword 'THIS IS MY PASSWD...'
+            keyPassword 'THIS IS MY PASSWD...'
         }
     }
     compileSdkVersion 28
