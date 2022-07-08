@@ -4,6 +4,9 @@
 ![2-1 grade](https://user-images.githubusercontent.com/100817401/173728511-6ba388a9-3dc8-4df5-b139-528a6ca66596.jpg)
 ![2-2 grade](https://user-images.githubusercontent.com/100817401/173728516-9291ee76-e912-4efc-93e7-dae9a93fd578.jpg)
 
+
+<br>
+__실제 시연 영상 링크__
 https://youtu.be/UBjyydt9fdc
 
 <hr>
