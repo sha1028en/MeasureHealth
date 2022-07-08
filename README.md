@@ -4,6 +4,8 @@
 ![2-1 grade](https://user-images.githubusercontent.com/100817401/173728511-6ba388a9-3dc8-4df5-b139-528a6ca66596.jpg)
 ![2-2 grade](https://user-images.githubusercontent.com/100817401/173728516-9291ee76-e912-4efc-93e7-dae9a93fd578.jpg)
 
+https://youtu.be/UBjyydt9fdc
+
 <hr>
 
 20대 남자면 모두 받아야 하는 군 신체검사는 정해진 기간에만 받을 수 있으며, 특수한 병이나 증상이 있으면, <br>
