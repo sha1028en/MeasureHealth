@@ -1,24 +1,10 @@
 # MeasureHealth / 신장심박측정기 및 신체검사 측정 앱
 2019 Q4 College Final Team Project. Measure ur health and Predict Military svc Grade.<br>
 한국폴리텍1대학 서울정수캠퍼스. 2019년 최종 졸업과제 팀 프로젝트( 박동수, 정진영, 이일성, 민병우, 김태원).<br><br>
-![2-1 grade](https://user-images.githubusercontent.com/100817401/173728511-6ba388a9-3dc8-4df5-b139-528a6ca66596.jpg)
-![2-2 grade](https://user-images.githubusercontent.com/100817401/173728516-9291ee76-e912-4efc-93e7-dae9a93fd578.jpg)
-
 
 <br>
 __실제 시연 영상 링크__<br>
 https://youtu.be/UBjyydt9fdc
-
-<hr>
-
-20대 남자면 모두 받아야 하는 군 신체검사는 정해진 기간에만 받을 수 있으며, 특수한 병이나 증상이 있으면, <br>
-최종결과가 나오는 기간이 길어져 등급판정이 늦게 나올 수 있어, 검사 과정이 불친절하다. <br>
-이런 신체검사 등급을 간단하고 빠르게 측정하여, 신체등급을 미리 예상 할 수 있는 신체검사 측정기와 연동하여 <br>
-예상등급을 예측 할 수 있는 앱을 개발 하는 것 이 목적이다. <br><br>
-
-또한, 이 어플리케이션은 아두이노Uno와 블루투스 무선 직렬통신을 통하여 값을 받아온다.
-![CmDataReceived](https://user-images.githubusercontent.com/100817401/173727863-4e6ef560-ae25-4dca-8501-70a7d8683af9.jpg)
-
 <hr>
 
 ### 대략적인 구상! [ 프로젝트 기획 ]
@@ -26,24 +12,13 @@ https://youtu.be/UBjyydt9fdc
 ![프로젝트 블록도](https://user-images.githubusercontent.com/100817401/173725242-fe50084c-b2be-4c3f-b06b-254b1a04ecea.png)
 ![강의계획서그림](https://user-images.githubusercontent.com/100817401/173725251-6bf0bd91-cd4f-477e-981e-65a3efb23fe7.png)
 
-
-
 ## 하드웨어 기능
-  - setup()
-    - 맴버 변수 init
-    - 보드 전원 인가, ReSet버튼 눌렀을 경우 분기.
-
-  - loop()
-    - HC-06모듈을 통해 초음파 / 혈압 센서의 값을 보낸다( 브로드 캐스트 ) 
-    - ![센서측정](https://user-images.githubusercontent.com/100817401/173728083-c2911349-d57b-4a2a-9c3f-1b10f946d4b2.png)
-
-
-
+  - HC-06모듈을 통해 초음파 / 혈압 센서의 값을 불루투스로 보낸다( 브로드 캐스트 ) 
+  
 ## 안드로이드 앱 : 순서도 / 기능 개요
-![image](https://user-images.githubusercontent.com/100817401/173725940-16ed6eb3-c232-47dc-bd1a-9d6362386207.png)
-
+  - hw가 보내준 값을 수신해서 신검 등급을 계산한다.
+  
 <hr>
-
   - SplashActivity
     - 앱 실행시 처음으로 보여지는 화면
     - 앱 제목과 이미지를 2초 보여주고 MainMenuActivity로 분기.
