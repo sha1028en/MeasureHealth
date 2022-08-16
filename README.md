@@ -2,7 +2,6 @@
 2019 Q4 College Final Team Project. Measure ur health and Predict Military svc Grade.<br>
 한국폴리텍1대학 서울정수캠퍼스. 2019년 최종 졸업과제 팀 프로젝트( 박동수, 정진영, 이일성, 민병우, 김태원).<br><br>
 
-<br>
 __실제 시연 영상 링크__<br>
 https://youtu.be/UBjyydt9fdc
 <hr>
@@ -17,24 +16,28 @@ https://youtu.be/UBjyydt9fdc
   
 ## 안드로이드 앱 : 순서도 / 기능 개요
   - hw가 보내준 값을 수신해서 신검 등급을 계산한다.
-  
 <hr>
+
   - SplashActivity
     - 앱 실행시 처음으로 보여지는 화면
     - 앱 제목과 이미지를 2초 보여주고 MainMenuActivity로 분기.
-    - ![image](https://user-images.githubusercontent.com/100817401/173727429-b13ba3a2-9c49-4ce4-a82b-31cfd378f1db.png)
+    - ![photo_2022-07-07_22-40-39](https://user-images.githubusercontent.com/100817401/184803421-104f7c4f-385d-485b-b035-785813509903.jpg)
 
+    
 
   - MainMenuActivity
     - 등급 측정 / 관련 정보 / 어플리케이션 종료 를 선택할 수 있는 화면.
-    - ![image](https://user-images.githubusercontent.com/100817401/173727468-ac7f0ae5-8154-488d-9216-3e34c5f8038d.png)
+    - ![photo_2022-08-16_14-22-38](https://user-images.githubusercontent.com/100817401/184803879-c044f7a4-b7cf-42fc-9e15-33633e38b7fd.jpg)
+
 
 
   - InforCautionDialog
     - "등급 측정"을 선택 시 보여지는 다이얼로그.
     - 안내문구를 표시
     - 확인 버튼 클릭시 RankMeasureActivity로 분기.
-    - ![image](https://user-images.githubusercontent.com/100817401/173727485-ad8e1a03-d5d1-464f-9df1-c9b29e787117.png)
+    - ![photo_2022-08-16_14-19-57](https://user-images.githubusercontent.com/100817401/184803750-185e033b-ed49-4b0f-8795-e0a016d679d7.jpg)
+
+
 
   
   <hr>
@@ -56,27 +59,15 @@ https://youtu.be/UBjyydt9fdc
       - 등급 결과를 보여주는 액티비티
       - 여기서 기준에 따라( 2019년도 기준) 계산하여 결과를 표시한다.
       - 직후 MainMenuActivity로 분기.
+      - ![photo_2022-08-16_14-16-12](https://user-images.githubusercontent.com/100817401/184803386-1c1ec532-ce08-4664-b974-5826f963701a.jpg)
 
 
-  <hr>
+<hr>
+
+  - 관련 정보 : InforUsefullActivity
+    - 관련 정보를 누르면 보여주는 액티비티 이다.
   
-  - 관련 정보
-    - InforUsefullActivity
-      - 관련 정보를 누르면 보여주는 액티비티 이다.
-  
-  <hr>
-  
-  - 블루투스 모듈
-    - BluetoothSerialSyncConnectionHelper
-      - 블루투스 직렬통신을 위한 클래스.
-      - 깃허브의  BluetoothSPP 외부 라이브러리를 활용하여 통신 구현
+  - 블루투스 모듈 : BluttoothSerialAsyncConnectionHelper
+    - 비동기 통신을 처리
+    - 깃허브의  BluetoothSPP 외부 라이브러리를 활용하여 통신 구현
 
-    - BluttoothSerialAsyncConnectionHelper
-      - 비동기 통신을 처리
-      - BluetoothSerialSyncConnectionHelper의 자식으로, 상위 클래스의 작업을 다른 스레드로 처리.
-    
-    - BluetoothResultDict
-      - 블루투스 통신의 결과값을 담을 데이터 클래스.
-      - MAC주소, 디바이스 이름, 통신 메세지, 통신 데이터를 담는다.
-
-  <hr>
